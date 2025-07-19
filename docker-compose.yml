@@ -3,7 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: soundboard-web:latest
+      platforms:
+        - "linux/amd64"
+        - "linux/arm64"
+    image: bogerserge/soundboard-web:latest
     container_name: soundboard-web
     restart: unless-stopped
     environment:
