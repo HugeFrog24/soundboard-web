@@ -1,7 +1,7 @@
 import { metadata } from '../metadata';
 
 export default function PrivacyPolicy() {
-  const { app, company } = metadata;
+  const { app, company, legal } = metadata;
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
