@@ -1,7 +1,7 @@
 import { metadata } from './metadata';
 
 export default function Home() {
-  const { app, legal } = metadata;
+  const { app } = metadata;
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       {/* Hero Section */}
