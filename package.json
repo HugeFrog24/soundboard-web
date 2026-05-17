@@ -6,12 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix && prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\" && tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix && prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\" && tsc --noEmit",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "type-check": "tsc --noEmit",
-    "check": "npm run lint && npm run type-check",
-    "fix": "npm run format && npm run lint:fix"
+    "check": "pnpm run lint && pnpm run type-check",
+    "fix": "pnpm run format && pnpm run lint:fix"
   },
   "dependencies": {
     "next": "16.2.6",
@@ -36,6 +36,7 @@
     "postcss": "^8.5.14",
     "prettier": "^3.8.3",
     "tailwindcss": "^4.3.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3"
   }
 }
